@@ -1,0 +1,709 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Peggy Wolf - Yogalehrerin</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a4a934ce-3b11-40f9-a740-414a59c97a44" class="page serif"><header><img class="page-cover-image" src="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-19.jpg" style="object-position:center 30.620000000000005%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🧘🏼</span></div><h1 class="page-title">Peggy Wolf - Yogalehrerin</h1><p class="page-description"></p></header><div class="page-body"><div id="86a8dc9b-02a9-4b6b-b8f3-bb7b5bd10a1a" class="column-list"><div id="b8eae848-7f9b-4468-9b67-362b5399b880" style="width:25%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="4739dbcf-1dbe-4a73-a18a-8396f10eefc7"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/yin-yang_gray.svg"/></div><div style="width:100%">Ich finde Yoga toll.</div></figure><p id="fe8314a3-1b16-4d03-a943-abf1a12243ce" class="">
+</p><figure id="0e4f8fa2-a5a0-4a7b-8f28-85dce2969a54" class="image"><a href="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/Sonnengrussyoga_Logo.png"><img style="width:1250px" src="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/Sonnengrussyoga_Logo.png"/></a></figure></div><div id="ce0ad28b-f9f5-4f4f-b1b3-f6d39745341d" style="width:75%" class="column"><h3 id="2fd192a1-4d3f-45eb-be26-b5efa5033e91" class="">Hallo, ich bin Peggy…</h3><blockquote id="2de3a91f-ae31-4111-b4d6-a841c4414de1" class=""><mark class="highlight-default"><em>Das ich mal Yogalehrerin werden würde, hatte ich nicht auf dem Schirm. Interessiert hab ich mich als Physiotherapeutin, allerdings sollte das Anfangs nicht so sein.</em></mark><p id="f0a2817f-0d10-4707-9f9f-6f01f87c695d" class=""><mark class="highlight-default"><em>Um genau zu Sein, begann ich mit Feng Shui und dem großen Bedürfnis nach einem harmonischen Leben. Mit diesem Hintergrund kam ich zum Yoga und entdeckte es für mich.</em></mark></p><p id="f43bf102-a9ff-4118-ba92-c5a0ae3c9165" class=""><mark class="highlight-default"><em>Anfangs war ich selbst Teilnehmerin eines wöchentlich stattfindenden Yogakurses.</em></mark></p><p id="3400260f-e194-4574-9856-5a7746ec9765" class=""><mark class="highlight-default"><em>Da es mir sehr gut gefiel, beschloss ich 2011 an einer Yoga-Studien-Reise in die Türkei teilzunehmen.</em></mark></p><p id="9fc5bb08-743b-48ea-a42c-4eb0030a88fa" class=""><mark class="highlight-default"><em>Nach dieser Reise wusste ich, dass Yoga mehr war als nur ein Sport, ich wollte es zu meinem Beruf machen und vielen Menschen zeigen, wie sie mit Yoga ihr Leben verbessern können.</em></mark></p><p id="df4e4d63-314f-470f-9d94-2c47a8939699" class=""><mark class="highlight-default"><em>2012 startete ich dann mit der Yoga-Ausbildung im E-Max (Wenn du Interesse hast schau doch gerne einmal bei E-Max Yoga vorbei. </em></mark><mark class="highlight-default"><em><a href="https://emax-yoga.de/ausbildung-zum-yoga-kursleiter-lehrer">Hier gehts zur E-MAX Ausbildungsseite</a></em></mark><mark class="highlight-default"><em>…)</em></mark></p><p id="9ee57211-51fe-48ac-a2bd-7fdfc08c142d" class=""><mark class="highlight-default"><em>Nach vielen tollen Ausbildungswochenenden konnte ich endlich meine erste eigene Yoga-Stunde im eigenen Haus geben.</em></mark></p><p id="6bf92ec0-4f16-4778-b253-b979afe07f58" class=""><mark class="highlight-default"><em>Zwei Jahre später schloss ich endgültig die Ausbildung zur Yogalehrerin ab und gebe seit dem jedes Jahr viele Kurse rund um und in Pirna.</em></mark></p><p id="25b247c8-49ab-4101-b4fe-6662a5466feb" class=""><mark class="highlight-default"><em>Im Anschluss daran besuche ich immer wieder spannende Weiterbildungen und bin froh, den Weg gegangen zu sein, schließlich war es mein Traum.</em></mark></p></blockquote></div></div><p id="6ebcbc41-75f0-4237-9de7-736ea156d982" class=""><mark class="highlight-default"><a href="https://www.notion.so/Peggy-Wolf-Yogalehrerin-a4a934ce3b1140f9a740414a59c97a44?pvs=21"><strong>Melde dich doch einfach zu einem kostenlosen Probetraining an und probiere es aus.</strong></a></mark></p><h2 id="4d90aa44-b419-4eac-abec-5c914f8de6b5" class="">Kurstermine 🗓️</h2><table id="be200628-ea01-4b48-92e9-880c5374acf3" class="simple-table"><thead class="simple-table-header"><tr id="aec5181a-8cc1-4805-ba58-9335aff51a11"><th id="NmiX" class="simple-table-header-color simple-table-header" style="width:161px"><strong>Montag:</strong></th><th id="lonV" class="simple-table-header-color simple-table-header" style="width:107px"><strong>Dienstag:</strong></th><th id="mFkz" class="simple-table-header-color simple-table-header" style="width:163.4921875px"><strong>Mittwoch:</strong></th><th id="PATR" class="simple-table-header-color simple-table-header" style="width:156.1171875px"><strong>Donnerstag:</strong></th><th id="ZFEr" class="simple-table-header-color simple-table-header"><strong>Freitag: </strong></th></tr></thead><tbody><tr id="9da18594-720a-4330-9e18-ef1437af89bb"><td id="NmiX" class="" style="width:161px">10:00 Uhr <a href="http://www.physiotherapie-nimz.de/">Physiotherapie Nimz in Heidenau</a></td><td id="lonV" class="" style="width:107px">15:30 Uhr Börnersdorf</td><td id="mFkz" class="" style="width:163.4921875px">9:00 Uhr <a href="https://www.erdenkinder-dresden.de">Kindergarten “Erdenkinder” Pillnitz</a></td><td id="PATR" class="" style="width:156.1171875px">8:00 Uhr <a href="http://www.physiotherapie-rosenbluete.de/">Physiotherapie Rosenblüte in Pirna</a></td><td id="ZFEr" class="">10:00 Uhr Rathen Turnhalle </td></tr><tr id="dca62952-01af-4d6f-b815-f44b4f5a3fbf"><td id="NmiX" class="" style="width:161px">12:30 Uhr Kinderyoga in der Grundschule Königstein</td><td id="lonV" class="" style="width:107px">17:30 Uhr Börnersdorf</td><td id="mFkz" class="" style="width:163.4921875px">17:30 Uhr <a href="https://www.dasoertliche.de/Themen/Podologie-Meska-Dohna-Dresdner-Str">Podologie “Meska” Dohna</a></td><td id="PATR" class="" style="width:156.1171875px">16:40 Uhr Rathen Turnhalle </td><td id="ZFEr" class=""></td></tr><tr id="ea9d9740-1085-4c8b-b74f-a4b7750861cb"><td id="NmiX" class="" style="width:161px">17:30 Uhr Turnhalle Schillergymnasium Pirna Gymnastikraum</td><td id="lonV" class="" style="width:107px">19:30 Uhr Börnersdorf</td><td id="mFkz" class="" style="width:163.4921875px"></td><td id="PATR" class="" style="width:156.1171875px">19:00 Uhr <a href="http://www.physiotherapie-rosenbluete.de/">Physiotherapie Rosenblüte in Pirna</a></td><td id="ZFEr" class=""></td></tr><tr id="a263435c-e67b-49c1-bc84-c7fd97d0acb9"><td id="NmiX" class="" style="width:161px">19:45 Uhr Gohrisch </td><td id="lonV" class="" style="width:107px"></td><td id="mFkz" class="" style="width:163.4921875px"></td><td id="PATR" class="" style="width:156.1171875px"></td><td id="ZFEr" class=""></td></tr></tbody></table><p id="4b1e98d9-2695-4149-913d-9717e434ba44" class="">
+</p><p id="f182b139-d0df-41a0-a0ab-ec591dcc8750" class="">
+</p><hr id="eb05ecf3-68b0-4b3b-bd2a-437d99d735ad"/><h2 id="7b984fba-ec3e-401f-8caf-5eb5070de409" class="">6. Gründe zum Ausprobieren ☯️</h2><blockquote id="2dad0ac5-9c10-41f2-8e17-3f69df83d491" class="">Namaste und herzlich willkommen! </blockquote><p id="2a5213b5-d4bf-467d-af87-d8611663f8f2" class="">In der heutigen schnelllebigen Welt, in der Stress und Hektik allgegenwärtig sind, ist Yoga nicht nur eine spirituelle Praxis, sondern auch ein kraftvolles Werkzeug, um Balance und Wohlbefinden in den Alltag zu integrieren. Hierbei findest du 6 gute Gründe damit einmal zu starten… </p><div id="066ab397-75ad-49db-b8c3-863e15e73f04" class="column-list"><div id="431bff25-1e0d-4dee-af90-9869644557e2" style="width:50%" class="column"><p id="4a48260d-5c1d-431f-91e5-afb933714a93" class="">
+</p><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="3df8c2bb-1d8b-4ac5-a80f-e062e95ed73b"><div style="font-size:1.5em"><span class="icon">☺️</span></div><div style="width:100%"><strong>1. Stressreduktion </strong><br/>Yoga lehrt uns, im gegenwärtigen Moment zu verweilen und den Geist zu beruhigen. Die bewusste Atmung und Meditationstechniken fördern die Entspannung und helfen dabei, den Stress des Alltags zu reduzieren. Ein ausgeglichener Geist trägt dazu bei, produktiver und gelassener mit den Herausforderungen des Lebens umzugehen.<br/></div></figure><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="3147f6a3-f477-456a-90c9-65760e3a6e3b"><div style="font-size:1.5em"><span class="icon">💪🏼</span></div><div style="width:100%"><strong>2. Körperliche Fitness </strong><br/>Die vielfältigen Yoga-Asanas (Übungen) stärken nicht nur Muskeln, Gelenke und die Wirbelsäule, sondern verbessern auch die Flexibilität und den Gleichgewichtssinn. Eine regelmäßige Praxis fördert die allgemeine körperliche Fitness, was sich positiv auf die Gesundheit auswirkt.<br/></div></figure><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="2ec4ebf4-8d29-4ae2-a26d-92aa2f81ab71"><div style="font-size:1.5em"><span class="icon">💨</span></div><div style="width:100%"><strong>3. Verbesserte Atmung </strong><br/>Yogische Atemtechniken (Pranayama) lehren uns, bewusster zu atmen. Durch tiefe und kontrollierte Atemzüge wird der Sauerstofffluss im Körper optimiert, was nicht nur die Lungenkapazität erhöht, sondern auch den Energiehaushalt positiv beeinflusst.<br/></div></figure></div><div id="5ad1af71-fe62-4896-a3fd-70fa2e1891e9" style="width:50%" class="column"><p id="a1c335fc-8a2c-4c1b-bf32-b314fb49af73" class="">
+</p><p id="1a605b65-9353-4fb7-a041-1b2026464c4b" class="">
+</p><p id="d21fd961-f52c-4ce8-9788-48cff5adb6ec" class="">
+</p><p id="0f4cb9f4-feeb-438f-ba27-9dcca96aeb23" class="">
+</p><p id="de2ef210-9eb7-483b-8ea6-8eb4bce010c6" class="">
+</p><p id="2472a609-c2df-406f-a118-1eaab8e44bb1" class="">
+</p><p id="5577bbe1-dcb5-407a-aefe-43dc003e957f" class="">
+</p><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="24bcf5a1-fe93-4114-9fd4-e401d38ecbd1"><div style="font-size:1.5em"><span class="icon">💭</span></div><div style="width:100%"><strong>4. Mentaler Fokus und Klarheit </strong><br/>Yoga fördert die Konzentration und den mentalen Fokus. Die Meditationstechniken verbessern die geistige Klarheit und helfen, störende Gedanken loszulassen. Dies trägt dazu bei, im Alltag effektiver zu arbeiten und Entscheidungen bewusster zu treffen.<br/></div></figure><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="85a1ff26-1b4e-42cb-addd-9675164a38cc"><div style="font-size:1.5em"><span class="icon">❤️</span></div><div style="width:100%"><strong>5. Förderung der Emotionalen Gesundheit </strong><br/>Die Verbindung von Bewegung, Atmung und Meditation im Yoga wirkt sich positiv auf die emotionale Gesundheit aus. Es hilft, Stress abzubauen, emotionale Blockaden zu lösen und einen ausgeglichenen Gemütszustand zu erreichen.<br/></div></figure><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="a16aa368-2435-4f90-9c0c-84c1a9000cbd"><div style="font-size:1.5em"><span class="icon">🤝</span></div><div style="width:100%"><strong>6. Gemeinschaft und soziale Verbindung </strong><br/>Yoga schafft eine Gemeinschaft von Gleichgesinnten, die sich auf dem Weg zur Gesundheit und Selbsterkenntnis unterstützen. Die soziale Verbindung, sei es in einem Kurs oder einer Online-Community, bietet emotionale Unterstützung und stärkt das Gefühl der Zugehörigkeit.<br/></div></figure><p id="98386501-b9d7-432b-b436-b003d8d324b5" class="">
+</p></div></div><h3 id="20edf6b4-3fe9-4240-8073-79121e879aff" class="">Möge dein Weg durch Yoga zu innerem Frieden, Gesundheit und einem erfüllten Alltag führen. </h3><h2 id="cb906470-5eb9-4278-94ee-6a60bd66b461" class="">Namaste!</h2><p id="a0ef1282-4885-4edf-9dc3-f6c263105454" class="">
+</p><div id="0a5a37a7-8d98-4d81-9acb-27c752dc3321" class="column-list"><div id="bb34ed5e-23e2-40cf-a1f1-839339fb58fe" style="width:56.25%" class="column"><h1 id="dcd29991-88ef-41ef-8730-0e872589329a" class="">Ausbildungen</h1><p id="ea4707c3-576d-4544-a44e-bd3666e363ca" class="">In meiner Zeit als Yogi, habe ich mich immer für vieles interessiert und versucht mehr und mehr zu lernen, hier bekommst du einen Überblick über meine Aus-&amp; Weiterbildungen.</p><ul id="2fe96ede-905f-4028-bf52-222ca88816e4" class="bulleted-list"><li style="list-style-type:disc">2020 Inside Flow Yogalehrerin bei Urban Yoga Hamburg, Young Ho Kim</li></ul><ul id="37e10599-34af-4161-ab01-c7dc6001d281" class="bulleted-list"><li style="list-style-type:disc">2016/17 Jin Shin Jyutsu Physio Philosophie Die Heilkraft in deinen Händen mit Christiane Holzmeister</li></ul><ul id="755a205e-5afa-49c2-ae54-cd24ab60f006" class="bulleted-list"><li style="list-style-type:disc">Tagesseminare mit Anna Trökes im Yoga-Vital Pirna</li></ul><ul id="ae316c47-f691-4385-a3d8-6f278d6da2ed" class="bulleted-list"><li style="list-style-type:disc">2013 - 2015 Workshops mit Elke Rudolph „Zeitlos Yoga“</li></ul><ul id="7d3a2329-c840-4c2c-9002-625b22a3132a" class="bulleted-list"><li style="list-style-type:disc">09/2013 Intensiv-Seminar mit Rose Preston (Wales)    Der wahre Sinn des Yoga</li></ul><ul id="e676c984-0232-49d0-a222-3c6867500f53" class="bulleted-list"><li style="list-style-type:disc">02/2014 - 01/2015 Kinderyogaausbildung bei Matangi Melanie Eichberger</li></ul><ul id="604175c5-41d0-4581-bf7c-3c5dbd685242" class="bulleted-list"><li style="list-style-type:disc">zertifizierte E.max. Yoga-Lehrer-Ausbildung im 9/2014</li></ul><ul id="ea13289a-2fc0-416d-844d-6709c926a144" class="bulleted-list"><li style="list-style-type:disc">Ärztlich geprüfte Yoga-Kursleiterin 2012</li></ul></div><div id="34b920d4-7521-436c-99b2-1e7baca8971a" style="width:43.75000000000001%" class="column"><figure id="fc9207b7-2483-46c9-ad06-d26af2e29c74" class="image" style="text-align:center"><a href="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-20.jpg"><img style="width:528px" src="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-20.jpg"/></a></figure><p id="fa84e665-619e-4f0a-b568-3321683c8376" class="">
+</p></div></div><hr id="c6cf6379-6bff-462b-b767-cbcdde60617f"/><h1 id="2fda6c5d-e89c-46cb-9f25-3c83a1b26da5" class="">Kontakt ✉️</h1><p id="98a99708-0fc2-450b-baec-274a19f2afb5" class="">Du hast eine Frage, möchtest dich zu einem Kurs anmelden oder würdest gerne einfach mal mit mir Kontakt aufnehmen, dann bist du hier genau richtig. </p><p id="e8fd9a4a-083d-49f5-bbdc-4ff9bb128f93" class="">Weiter unten findest du auch einen Bereich mit Fragen und Antworten. Vielleicht hilft dir das schon weiter. Falls deine Frage nicht dabei ist, nutze gerne mein Formular und ich melde mich bei dir.  </p><p id="3188b081-36e5-4957-b55f-6029dc0bfe43" class="">
+</p><figure id="b0c589fa-47ba-4280-944f-66d591608654"><div class="source"><a href="https://tally.so/r/w2KWoD">https://tally.so/r/w2KWoD</a></div></figure><p id="30d897b4-2072-4fcf-ac38-a57e624f56f1" class="">
+</p><p id="e764c2a5-98aa-4b2d-9c63-3fe978d5b13d" class="">Ich freu mich auf dich.</p><hr id="c390cca5-0fd9-4836-b20d-80e355dc8bfe"/><div id="bb9849f8-ce00-4de5-b770-b17de0a415e2" class="column-list"><div id="0a9f725a-80dd-44a4-b027-1160972a5d69" style="width:33.33333333333333%" class="column"><figure id="dbbae019-f1ff-4fb4-bcf0-ea4c8f2af283" class="image"><a href="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-21.jpg"><img style="width:432px" src="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-21.jpg"/></a></figure></div><div id="62bd2eaa-9144-4559-8403-0833be1a1115" style="width:33.33333333333335%" class="column"><figure id="bd1918c9-3209-41db-b2c1-0c752eaa6fa4" class="image"><a href="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-18.jpg"><img style="width:348.65625px" src="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-18.jpg"/></a></figure></div><div id="dfff0f55-ba53-46d4-b585-19e6a06781ac" style="width:33.33333333333333%" class="column"><figure id="d490eb6e-15c4-4f23-a626-851d07937b06" class="image"><a href="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-22.jpg"><img style="width:348.65625px" src="Peggy%20Wolf%20-%20Yogalehrerin%20a4a934ce3b1140f9a740414a59c97a44/gbs_22_2023_-22.jpg"/></a></figure></div></div><hr id="02fdb6c4-47d5-44a9-95db-468137cb14a4"/><h3 id="78c7bdc2-83f0-46fb-8ba6-056df555111d" class="">Fragen und Antworten ❓</h3><ul id="94a07701-3b43-4a29-897a-d1a011987779" class="toggle"><li><details open=""><summary><strong>Ich hab noch nie Yoga gemacht, wie soll ich beginnen ?</strong></summary><p id="826c64ff-f9a3-4557-8249-d2cef69e263a" class="">Hi, </p><p id="38a6bbb8-75d8-4d9a-8b76-4c3c5c3b0207" class="">ich begrüße dich ganz herzlich bei mir. </p><p id="f9a628b6-8718-4f4f-933d-ca765b2ace40" class="">Melde dich doch einfach bei mir und wir vereinbaren ein Termin zum Schnuppern, dann kannst du vollkommen unverbindlich einmal mit dazu kommen und selber erfahren ob Yoga was für dich ist oder nicht. </p></details></li></ul><ul id="afa6aac4-0e35-4977-953a-42fddfb09d4a" class="toggle"><li><details open=""><summary><strong>Kann ich auch einzelne Yogastunden bezahlen ? </strong></summary><p id="81fefa8f-94f6-44af-807f-1a79f89c8982" class="">Selbstverständlich kannst du auch nur zu einzelnen Yogastunden kommen, allerdings musst du diese dann selber bezahlen und kannst sie nicht von der Krankenkasse absetzten. </p></details></li></ul><ul id="c139108f-4978-416a-b786-5fb4cf0344a3" class="toggle"><li><details open=""><summary><strong>Wieviel kostet eine Zehnerkarte ? </strong></summary><p id="37b5e7fb-0e8f-41e4-82d3-d761f5f864f5" class="">Über den Preis würde ich gerne einmal persönlich mit dir sprechen. Komm doch einfach mal zu einem meiner Termine. Du kannst da auch einfach mal mitmachen. #Schnupperkurs</p><p id="bd91a2b6-20c2-40a5-9126-bc8eb5aab790" class="">Schau einfach mal auf der Seite oder frag nach. </p><p id="4a733f0a-b73b-4140-b426-e5d44f9a1143" class=""><a href="https://www.aok.de/pk/gesundheitskurse/suche/?view=detail&amp;eventId=289038&amp;eventClientId=10">Falls du bei der AOK bist schau doch einmal hier.</a></p></details></li></ul><ul id="e34e1b48-ae92-4555-8911-5bde7e7d3036" class="toggle"><li><details open=""><summary><strong>Ich kann morgen nicht zum Yoga kommen, was kann ich tun?</strong></summary><p id="a42c2c68-8407-4216-bf86-59a0fe05c498" class="">Ich wünsche dir alles Gute und freue mich aufs nächste mal wenn du wieder Zeit hast.</p><p id="72f6e999-b255-41b6-a5ca-00ae429d50b1" class="">Sag mir am besten einfach kurz Bescheid und nutze einen anderen Kurs diese Woche.</p></details></li></ul><ul id="9bde9e94-7cef-4b3b-a2de-7a350b557b75" class="toggle"><li><details open=""><summary><strong>Wie lange gilt meine 10er Karte ? </strong></summary><p id="d62c179b-7949-4631-be38-9b0cf64bd830" class="">Deine Zehnerkarte gilt für ein Jahr und solange bis du sie abgearbeitet hast. Denk aber bitte daran, dass Yoga erst wirkt und seine Kraft entfaltet, wenn man es regelmäßig angeht. Deshalb biete ich dir auch an, bei Ausfall einen anderen Kurs war zu nehmen. </p></details></li></ul><ul id="7dcc8e7b-5a28-4db6-a04a-855590309c86" class="toggle"><li><details open=""><summary><strong>Ich finde, du machst das wunderbar, kann ich dich noch anderweitig unterstützen ? </strong></summary><p id="559d9141-5115-4cb5-9298-6f019b1642d7" class="">Danke, ich geb mir Mühe. </p><p id="485aae56-fd41-49d4-bd0b-ad3f505d0cd8" class="">Wenn du möchtest empfehle doch meinen Kurs weiter und überzeug deine Freunde teil zu nehmen. Zudem gibt es in baldiger Zukunft einen Online Kurs mit Yogastunden für zuhause. </p></details></li></ul><p id="ced7bb4e-64e5-4e96-8caf-081fa1ebca9f" class="">
+</p><p id="542086de-3298-4c45-a0c3-23d5189fd97c" class="">
+</p><p id="73f5877d-b5a5-486c-9eed-1d2457175d43" class="">
+</p><p id="df2be81d-a617-4e8a-868a-06b70cde2e8e" class="">
+</p><p id="f2505037-fe71-4651-8f97-0b7b662a6b52" class="">
+</p><p id="df14302b-9d34-4271-ad73-89c14df47667" class="">
+</p><p id="fffbfccb-299b-4eaa-8753-845be43dd42c" class="">
+</p><p id="83c1d0a5-7ed1-4d88-94cb-dd4aa0d7996e" class="">Website created by <a href="https://www.notion.so/itsjackmedia-Content-Creation-c3a0af766ac441b4bc51c69d79e527f0?pvs=21">Jack</a></p><hr id="6c72f0f4-844d-49cb-8184-c719b095f0be"/><ul id="d58e7c5a-e67f-4c92-8372-de08df28974c" class="toggle"><li><details open=""><summary>Impressum </summary><p id="917b23b8-3587-440c-97db-34e1609fcf49" class="">IMPRESSUM &amp; DATENSCHUTZ</p><p id="3545258d-db1a-4a74-b947-ffe68ce62cc0" class=""><strong>Wer wir sind</strong></p><p id="afd70729-d7f1-4cbc-9f71-04c2ac7d60d6" class="">Meine Webseite heißt: <a href="https://www.sonnengrussyoga.com/">https://www.sonnengrussyoga.com</a></p><p id="638c5c6e-4a85-419a-96d8-bcba4f1ca1c3" class="">Welche personenbezogenen Daten wir sammeln und warum wir sie sammeln</p><p id="86f310f4-56b6-4f13-85bb-ac4578afad76" class="">Bemerkungen</p><p id="044fb5e4-6e5e-416b-872d-f10da6306665" class="">Wenn Besucher Kommentare auf der Website hinterlassen, erfassen wir die im Kommentarformular angezeigten Daten sowie die IP-Adresse des Besuchers und die Zeichenfolge des Browser-Benutzeragenten, um die Spam-Erkennung zu unterstützen.</p><p id="9bf7865f-f681-4062-931a-69777ac639f5" class="">Dem Gravatar-Dienst kann eine anonymisierte Zeichenfolge bereitgestellt werden, die aus Ihrer E-Mail-Adresse erstellt wurde (auch als Hash bezeichnet), um festzustellen, ob Sie sie verwenden. Die Datenschutzrichtlinie des Gravatar-Dienstes finden Sie hier: https://automattic.com/privacy/. Nach Genehmigung Ihres Kommentars ist Ihr Profilbild im Kontext Ihres Kommentars für die Öffentlichkeit sichtbar.</p><p id="ed04dd7a-4807-4aab-a685-43b5d148ca70" class="">Medien</p><p id="b1ef195a-ae35-40c8-addb-e34aaa32618a" class="">Wenn Sie Bilder auf die Website hochladen, sollten Sie das Hochladen von Bildern mit eingebetteten Standortdaten (EXIF GPS) vermeiden. Besucher der Website können Standortdaten von Bildern auf der Website herunterladen und extrahieren.</p><p id="af7ee684-21ff-4792-9917-29fbaecdfb3a" class="">Kontakt-Formulare</p><p id="d5ff8b7e-8687-4a36-8896-999e235dbca6" class="">Wenn sie ihre Daten in Kontakt-Formulare eintragen, sind sie automatisch mit deren Weiterverarbeitung unsereins einverstanden. Allerdings können sie sicher sein, dass wir ihre Daten nicht willentlich an dritte weitergeben werden.</p><p id="d8aa3064-babf-485b-bcd8-52366bae539b" class="">Cookies</p><p id="53079b1f-a806-4955-8ed8-30aec876b761" class="">Wenn Sie einen Kommentar auf unserer Website hinterlassen, können Sie sich dafür entscheiden, Ihren Namen, Ihre E-Mail-Adresse und Ihre Website in Cookies zu speichern. Diese dienen Ihrer Bequemlichkeit, damit Sie Ihre Daten nicht erneut eingeben müssen, wenn Sie einen weiteren Kommentar hinterlassen. Diese Cookies halten ein Jahr lang.</p><p id="d024ee9b-27d5-4138-ac1d-00a892db3e84" class="">Wenn Sie unsere Anmeldeseite besuchen, setzen wir ein temporäres Cookie, um festzustellen, ob Ihr Browser Cookies akzeptiert. Dieses Cookie enthält keine persönlichen Daten und wird beim Schließen Ihres Browsers verworfen.</p><p id="5ef58fbf-82fa-49dd-9917-ab29743ac046" class="">Wenn Sie sich anmelden, richten wir auch mehrere Cookies ein, um Ihre Anmeldeinformationen und Ihre Auswahlmöglichkeiten für die Bildschirmanzeige zu speichern. Anmelde-Cookies halten zwei Tage und Cookies für Bildschirmoptionen ein Jahr. Wenn Sie „Angemeldet bleiben“ auswählen, bleibt Ihr Login zwei Wochen lang bestehen. Wenn Sie sich von Ihrem Konto abmelden, werden die Anmelde-Cookies entfernt.</p><p id="4aabbdf6-d0c3-44d1-af4d-0aabd0fb5c10" class="">Wenn Sie einen Artikel bearbeiten oder veröffentlichen, wird ein zusätzliches Cookie in Ihrem Browser gespeichert. Dieses Cookie enthält keine persönlichen Daten und gibt lediglich die Post-ID des Artikels an, den Sie gerade bearbeitet haben. Es läuft nach 1 Tag ab.</p><p id="48c9fdbb-8ce1-4284-a604-e88dca780fef" class="">Eingebettete Inhalte von anderen Websites</p><p id="8076eecf-43c5-4443-a3ec-cbe077409f53" class="">Artikel auf dieser Website können eingebetteten Inhalt enthalten (z. B. Videos, Bilder, Artikel usw.). Eingebettete Inhalte von anderen Websites verhalten sich genauso, als hätte der Besucher die andere Website besucht.</p><p id="ef317741-6dfd-4bc5-90c0-7729fa71ec63" class="">Diese Websites sammeln möglicherweise Daten über Sie, verwenden Cookies, binden zusätzliches Tracking von Drittanbietern ein und überwachen Ihre Interaktion mit diesen eingebetteten Inhalten, einschließlich der Verfolgung Ihrer Interaktion mit den eingebetteten Inhalten, wenn Sie über ein Konto verfügen und auf dieser Website angemeldet sind.</p><p id="c0d218af-470c-4214-90c5-943d0b060108" class="">Analytics</p><p id="faacddf7-9895-43b3-b3da-c4683632359b" class="">Mit wem wir Ihre Daten teilen</p><p id="cadd23d9-52c4-4919-92db-b204597ca12b" class="">Wie lange speichern wir Ihre Daten?</p><p id="23a02794-4e6c-42a9-82b7-c04997351e60" class="">Wenn Sie einen Kommentar hinterlassen, bleiben der Kommentar und seine Metadaten auf unbestimmte Zeit erhalten. Auf diese Weise können wir Folgekommentare automatisch erkennen und genehmigen, anstatt sie in einer Moderationswarteschlange zu halten.</p><p id="0fb6cd5a-20d0-4d0c-aa84-6ac41183018b" class="">Für Benutzer, die sich auf unserer Website registrieren (falls vorhanden), speichern wir auch die von ihnen angegebenen persönlichen Informationen in ihrem Benutzerprofil. Alle Benutzer können ihre persönlichen Daten jederzeit anzeigen, bearbeiten oder löschen (außer sie können ihren Benutzernamen nicht ändern). Website-Administratoren können diese Informationen auch anzeigen und bearbeiten.</p><p id="3c228599-7845-473e-9346-2eab5b73b650" class="">Welche Rechte haben Sie an Ihren Daten?</p><p id="b99d90f5-fe00-47ab-ac5b-1e8fad0773ce" class="">Wenn Sie ein Konto auf dieser Website haben oder Kommentare hinterlassen haben, können Sie eine exportierte Datei der persönlichen Daten anfordern, die wir über Sie gespeichert haben, einschließlich aller Daten, die Sie uns zur Verfügung gestellt haben. Sie können auch verlangen, dass wir alle personenbezogenen Daten löschen, die wir über Sie gespeichert haben. Dies schließt keine Daten ein, die wir zu administrativen, rechtlichen oder Sicherheitszwecken aufbewahren müssen.</p><p id="b31c5def-bac2-40c4-8fc7-6ba29a474f05" class="">Wohin wir Ihre Daten senden</p><p id="c43bba4b-1358-4dc7-bf01-a97a2d8437c7" class="">Besucherkommentare können über einen automatisierten Spam-Erkennungsdienst überprüft werden.Besucherkommentare können über einen automatisierten Spam-Erkennungsdienst überprüft werden.</p><p id="39efc5ff-c9b4-417d-91c7-2238db6aa38e" class="">Ihre Kontaktinformationen</p><p id="0937c676-7db1-4af3-b08a-02399f8b2062" class="">Peggy Wolf</p><p id="bdf2b625-e1f5-430b-af74-510e1b620914" class="">peggy.sonnengruss@icloud.com</p><p id="28df0288-922c-4f59-abeb-577747aebc75" class=""><strong>Zusätzliche Information</strong></p><p id="2d3f704c-37a0-4871-b111-51c4b66d05b1" class="">Wie wir Ihre Daten schützen</p><p id="065a20a0-9d4e-4830-8c8e-ef3627690be2" class="">ALL OUR DATA IS SAVED IN HASHED DATA BASES, SO WE CANNOT SEE SENSIBLE PERSONAL DATA. ALL SENSIBLE PERSONAL DATA IS ENCRYPTED AND ANONYMIZED.</p><p id="5c31dd61-da65-44d8-91c4-7bd3c07baea6" class=""><strong>Impressum</strong></p><p id="0a303400-6fb6-49c7-919f-f6ba1d328bc8" class=""><span style="border-bottom:0.05em solid">Angaben gem. § 5 TMG</span></p><p id="ffa0f5cf-0111-481e-98cf-f6bd2ead07a4" class=""><strong>Haftungsausschluss – Disclaimer:</strong></p><p id="d413e207-e57a-4cd2-aade-34a812cf4d8f" class=""><span style="border-bottom:0.05em solid">Haftung für Inhalte</span></p><p id="301a1017-4e2d-4f64-8bda-bcebe4fb3662" class="">Alle Inhalte unseres Internetauftritts wurden mit größter Sorgfalt und nach bestem Gewissen erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p><p id="8b23c35b-feed-4c33-bf09-01f585162c10" class="">Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntniserlangung einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von den o.g. Rechtsverletzungen werden wir diese Inhalte unverzüglich entfernen.</p><p id="4d7e13fe-a4e2-45e0-81d0-049ab66f9296" class=""><span style="border-bottom:0.05em solid">Haftungsbeschränkung für externe Links</span></p><p id="a90f00db-1eb3-442e-ba73-66d0d505515a" class="">Unsere Webseite enthält Links auf externe Webseiten Dritter. Auf die Inhalte dieser direkt oder indirekt verlinkten Webseiten haben wir keinen Einfluss. Daher können wir für die „externen Links“ auch keine Gewähr auf Richtigkeit der Inhalte übernehmen. Für die Inhalte der externen Links sind die jeweilige Anbieter oder Betreiber (Urheber) der Seiten verantwortlich.</p><p id="ccb5c3bc-519c-44d6-b025-eb56edcfb520" class="">Die externen Links wurden zum Zeitpunkt der Linksetzung auf eventuelle Rechtsverstöße überprüft und waren im Zeitpunkt der Linksetzung frei von rechtswidrigen Inhalten. Eine ständige inhaltliche Überprüfung der externen Links ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht möglich. Bei direkten oder indirekten Verlinkungen auf die Webseiten Dritter, die außerhalb unseres Verantwortungsbereichs liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall nur bestehen, wenn wir von den Inhalten Kenntnis erlangen und es uns technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.</p><p id="34345153-a736-4401-a3ec-7ac2326fb64b" class="">Diese Haftungsausschlusserklärung gilt auch innerhalb des eigenen Internetauftrittes „<em>Name Ihrer Domain</em>“ gesetzten Links und Verweise von Fragestellern, Blogeinträgern, Gästen des Diskussionsforums. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargestellten Informationen entstehen, haftet allein der Diensteanbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p><p id="fa5af187-97d4-44a3-9145-ea3493b5ab5f" class="">Werden uns Rechtsverletzungen bekannt, werden die externen Links durch uns unverzüglich entfernt.</p><p id="e14dc19b-e60b-4f68-a527-7f4a08876dd7" class=""><span style="border-bottom:0.05em solid">Urheberrecht</span></p><p id="8d772a29-daff-426a-bb07-5c4a9ecbb91a" class="">Die auf unserer Webseite veröffentlichen Inhalte und Werke unterliegen dem deutschen Urheberrecht (<a href="http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf">http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf</a>) . Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung des geistigen Eigentums in ideeller und materieller Sicht des Urhebers außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Urhebers i.S.d. Urhebergesetzes (<a href="http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf">http://www.gesetze-im-internet.de/bundesrecht/urhg/gesamt.pdf</a> ). Downloads und Kopien dieser Seite sind nur für den privaten und nicht kommerziellen Gebrauch erlaubt. Sind die Inhalte auf unserer Webseite nicht von uns erstellt wurden, sind die Urheberrechte Dritter zu beachten. Die Inhalte Dritter werden als solche kenntlich gemacht. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.</p><p id="846976a4-d72d-4b47-9530-895078731867" class="">Dieses <a href="https://jurarat.de/muster-impressum">Impressum</a> wurde freundlicherweise von <a href="https://jurarat.de/">jurarat.de</a> zur Verfügung gestellt.</p></details></li></ul><p id="b422b659-3e20-4670-8a79-f79faedf2bda" class="">
+</p><p id="fa70927e-8519-44ca-9048-3ba9f81e69f9" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
